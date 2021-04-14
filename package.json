@@ -52,7 +52,7 @@
       "src/**/*.{js,jsx}"
     ],
     "setupFiles": [
-      "<rootDir>/config/polyfills.js"
+      "<rootDir>/config/div"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",

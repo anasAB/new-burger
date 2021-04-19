@@ -49,6 +49,7 @@ class BurgerBuilder extends Component {
         for (let i in disabledLessButton) {
             disabledLessButton[i] = disabledLessButton[i] <= 0
         }
+
         return (
             <div>
                 <Burger ingredients={this.state.ingredients} />

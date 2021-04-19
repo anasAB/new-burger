@@ -15,6 +15,7 @@
   border-radius: 2px;
   cursor: pointer;
   outline: none;
+  
 }
 
 .BuildControl button:disabled {
@@ -39,11 +40,15 @@
 .BuildControl .Less {
   background-color: #d39952;
   color: white;
+  box-shadow: 2px 2px 2px #966909;
+  border-radius: 14px 0px 12px 0;
 }
 
 .BuildControl .More {
   background-color: #8f5e1e;
   color: white;
+  box-shadow: 2px 2px 2px #966909;
+  border-radius: 0 12px 0 14px;
 }
 
 .BuildControl .Less:hover,

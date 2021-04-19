@@ -3,6 +3,11 @@ import classes from './Controls.css';
 import BuildControl from './BuildControl/BuildControl';
 
 const controls = (props) => {
+    
+    const ingredientsAmount = Object.values(props.ingredients).reduce((previousValue, currentValue ) => previousValue + currentValue , 0 )
+    
+
+    
     return (
         <div className={classes.Control}>
             {
@@ -16,9 +21,9 @@ const controls = (props) => {
                         removeIngredient={props.removeIngredient}
                         disabledLessButton={props.disabledLessButton[item['type']]} />
                 }
-
                 )}
             <div>Total Price: {props.totalPrice}</div>
+            <button className={classes.OrderButton}  disabled={!ingredientsAmount}>Order</button>
         </div>
     )
 }

@@ -1,0 +1,114 @@
+.Button {
+     /* background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;  */
+
+    background: none;
+    border: 4px solid #fff;
+     border-radius: 10px; 
+     color: #fff; 
+     display: block; 
+     display: inline-block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 2em 6em;
+    position: relative;
+    text-transform: uppercase; 
+
+
+}
+
+.Button::after {
+    /* -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; */
+
+    border: 1px solid transparent;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+
+  .Button::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    /* background: #003177; */
+    box-shadow: inset 0px 0px 0px #b6cdef;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+
+  .Button:hover::before {
+    width: 100%;
+  }
+
+  /* .Button::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: #a9c1e8;
+    -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+    transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+  }
+  .Button:hover::after {
+    width: 100%;
+  } */
+
+  /* .Button:hover {
+    border-left: 1px solid #b6cdef;
+    border-right: 1px solid #c1c1c2;
+    border-radius: 15px;
+  } */
+
+  /* .Button::before,
+  .Button::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+   */
+  /* .Button:hover {
+    color: #29f2e4;
+  }
+  .Button::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .Button:hover:after {
+    height: 100%;
+  } */
+
+
+/* .Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+} */
+
+.Continue {
+    color: #5C9210;
+}
+
+.Cancel {
+    color: #944317;
+}

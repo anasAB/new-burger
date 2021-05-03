@@ -3,10 +3,7 @@ import classes from './Controls.css';
 import BuildControl from './BuildControl/BuildControl';
 
 const controls = (props) => {
-    
     const ingredientsAmount = Object.values(props.ingredients).reduce((previousValue, currentValue ) => previousValue + currentValue , 0 )
-    
-
     
     return (
         <div className={classes.Control}>
@@ -23,7 +20,7 @@ const controls = (props) => {
                 }
                 )}
             <div>Total Price: {props.totalPrice}</div>
-            <button className={classes.OrderButton}  disabled={!ingredientsAmount}>Order</button>
+            <button className={classes.OrderButton}  disabled={!ingredientsAmount} onClick={() => props.showModal()}>Order</button>
         </div>
     )
 }
